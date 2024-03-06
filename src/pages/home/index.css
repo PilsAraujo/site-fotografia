@@ -1,0 +1,282 @@
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Seção navbar e showcase $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-primary{
+    color: #fff;
+    background: #634B66;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.logo{
+    order: 1;
+    font-size: 3rem;
+}
+
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color:#521B5A;
+}
+
+.showcase-area{
+    height: 50vh;
+    background: linear-gradient(rgba(240,240,240,0.144), rgba(255,255,255,0.336)), url(/public/assets/images/Paulista4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.main-title{
+   text-transform: uppercase;
+   font-weight: 900; 
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Seção SOBRE $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+#sobre {
+    padding: 50px 0px;
+    background: #ebf7f8;
+}
+
+#sobre h2{
+    font-size: 3.2rem;
+}
+
+#sobre p{
+    font-size: 1.6rem;
+    color: #555;
+}
+
+#sobre .small{
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.sobre-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-img{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+
+.sobre-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+}
+
+.sobre-img img{
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Seção SERVIÇOS $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+#servicos {
+    padding: 50px 0px;
+    background: #9AB2D6;
+}
+
+
+#servicos h2{
+    font-size: 3.2rem;
+    color: #133337;
+    text-align: end;
+}
+
+#servicos .subtitulo{
+    font-size: 4rem;
+    color: #000;
+    font-weight: 600;
+}
+
+#servicos .descricao{
+    text-align: end;
+    font-size: 1.6rem;
+    color: #444;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Seção FOTOS $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+#fotos{
+    padding: 5rem 0 10rem 0;
+    background: #A8A4B7;
+}
+
+#fotos h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.fotos-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotos-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+}
+
+.fotos-container img:hover{
+    transform: scale(1.5);
+}
+
+.img-container{
+    margin: 0 2rem;
+    position: relative;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Seção CONTATO $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+#contato{
+    padding: 5rem 0;
+    background: #220A15;
+}
+
+#contato .chamada{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #A8A4B7;
+}
+
+.contato-container{
+    display: flex;
+    background: #fff;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.contato-imagem{
+    width: 50%;
+}
+
+.contato-imagem img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    object-position: right;
+
+}
+
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container input, textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-container h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 1rem;
+}
